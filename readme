@@ -1,0 +1,10 @@
+# correspondence in charmm:
+#(cutnb,ctofnb,ctonnb = pairlistdist,cutoff,switchdist)
+
+#cp ../ligand/mol51.prm .
+
+#/Home/ii/parveeng/Softwares/namd/namd2 +p 8 final-mini.conf > final-mini.log &
+
+#echo 'set iseed = ' `date +%H%M%S` > seed.stream
+/Home/ii/parveeng/Softwares/namd/namd2 +p 8 heat.conf > heat.log &
+#/export/CHARMM_NR/build/cmake/charmm prot=pr3_prod lig=mol51 -i dcd2crd.inp > dcd2crd.out
